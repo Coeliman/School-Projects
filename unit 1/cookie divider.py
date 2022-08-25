@@ -1,0 +1,5 @@
+print("This program will divide up cookies with a given number of people")
+cookienum = int(input("How many cookies are in the box: "))
+peoplenum = int(input("How many people wish to eat the cookies: "))
+print(f"Each person can have {cookienum//peoplenum} cookie(s).")
+print(f"There will be {cookienum%peoplenum} cookies left.")
