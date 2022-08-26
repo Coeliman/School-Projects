@@ -22,7 +22,7 @@ def encrypt(msg):
             cipher += DICT[letter] + ' '
         else:
             cipher += '/'
-    #Space will seperate letters, / seperates words
+    #Space will seperate letters, / seperates words TESTESTREST
 print("Input string to encrypt")
 wrd = input().upper()
 encrypt(wrd)
