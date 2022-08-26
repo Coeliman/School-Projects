@@ -29,7 +29,7 @@ encrypt(wrd)
 num = 0
 string = cipher
 string = [*string]
-string.append("A")#
+string.append("A")
 while True:
     if string[num] == "/":
         print("delay(3500); ///NEWWORD")
