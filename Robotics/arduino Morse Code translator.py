@@ -1,4 +1,4 @@
-
+from tkinter import messagebox
 DICT = { 'A':'.-', 'B':'-...',
     'C':'-.-.', 'D':'-..', 'E':'.',
     'F':'..-.', 'G':'--.', 'H':'....',
@@ -50,6 +50,6 @@ while True:
         print("digitalWrite(13,LOW);")
         print("delay(500); ///LONG")
     elif string[num] == "A":
-            print("Translated to Arduino C++.")
+            messagebox.showinfo('Arduino Translator', 'Morse Code Successfully Translate')
             break
     num=num+1
