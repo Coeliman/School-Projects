@@ -1,4 +1,5 @@
 from tkinter import messagebox
+import os
 DICT = { 'A':'.-', 'B':'-...',
     'C':'-.-.', 'D':'-..', 'E':'.',
     'F':'..-.', 'G':'--.', 'H':'....',
@@ -30,26 +31,32 @@ num = 0
 string = cipher
 string = [*string]
 string.append("A")
+f = open("MorseCodeTranslate.txt", "w")
+f = open("MorseCodeTranslate.txt", "a+")
+f.seek(0)
+f.write("///TRANSLATED INTO ARDUINO C++ BELOW\n")
 while True:
     if string[num] == "/":
-        print("delay(3500); ///NEWWORD")
+        f.write(f"delay(3500); ///NEWWORD\n")
         #7 units
     elif string[num] == " ":
         #3 units
-        print("delay(1500); ///SPACE")
+        f.write("delay(1500); ///SPACE\n")
     elif string[num] == ".":
         #1 unit
-        print("digitalWrite(13,HIGH);")
-        print("delay(500);")
-        print("digitalWrite(13,LOW);")
-        print("delay(500); ///SHORT")
+        f.write("digitalWrite(13,HIGH)\n;")
+        f.write("delay(500);\n")
+        f.write("digitalWrite(13,LOW);\n")
+        f.write("delay(500); ///SHORT\n")
     elif string[num] == "-":
         #3 units
-        print("digitalWrite(13,HIGH);")
-        print("delay(1500);")
-        print("digitalWrite(13,LOW);")
-        print("delay(500); ///LONG")
+        f.write("digitalWrite(13,HIGH);\n")
+        f.write("delay(1500);\n")
+        f.write("digitalWrite(13,LOW);\n")
+        f.write("delay(500); ///LONG\n")
     elif string[num] == "A":
-            messagebox.showinfo('Arduino Translator', 'Morse Code Successfully Translate')
+            f.write("//ENDPROGRAM\n")
             break
     num=num+1
+f.close()
+print('Success! The code is now located in MorseCodeTranslate.txt. This is located in the folder you currently have this python program in.')
