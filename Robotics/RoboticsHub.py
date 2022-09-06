@@ -6,3 +6,4 @@ if user_input == "A":
     arduinoMorseCodetranslator.MORSE()
 else: 
     print("Invalid input, quitting program")
+#THIS IS A TEST
