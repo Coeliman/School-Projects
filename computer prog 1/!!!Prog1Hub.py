@@ -8,5 +8,18 @@ import u6_Alienrace,u6_rpsAIv1,u6_RPSAiv2,u6_tictactoeAI,u4_6sideddie
 print("Programs made my Eli G")
 print("This includes all projects made during Programming 1.")
 print("Enjoy")
-print(f"A. Unit 1\nB. Unit 2\nC. Unit 3\n")
+print(f"A. Unit 1\nB. Unit 2\nC. Unit 3\nD. Unit 4\n E. Unit 5\nF. Unit 6")
 user_Input = input()
+
+if user_Input == "A":
+    pass
+elif user_Input == "B":
+    pass
+elif user_Input == "C":
+    pass
+elif user_Input == "D":
+    pass
+elif user_Input == "E":
+    pass
+elif user_Input == "F":
+    pass
