@@ -5,3 +5,8 @@ import u4_6sideddie,u4_customfunstest,u4_randnums,u4_unit4scrath,u4_visdicemeets
 import u5_drawshapeuser,u5_maze,u5_olympicring,u5_pixelartcharmander,u5_pixeldraw,u5_scrath,u5_shapes,u5_sobemoji,u5_tetris,u5_turtlerace,u5_turtleracev2,u5_upattern
 import u6_Alienrace,u6_rpsAIv1,u6_RPSAiv2,u6_tictactoeAI,u4_6sideddie
 #HUB FOR ALL PROJECTS
+print("Programs made my Eli G")
+print("This includes all projects made during Programming 1.")
+print("Enjoy")
+print(f"A. Unit 1\nB. Unit 2\nC. Unit 3\n")
+user_Input = input()
