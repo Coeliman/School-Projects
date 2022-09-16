@@ -3,5 +3,6 @@
         "personal"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "C_Cpp.errorSquiggles": "Disabled"
 }
