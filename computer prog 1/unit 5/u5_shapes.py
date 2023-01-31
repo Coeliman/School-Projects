@@ -1,0 +1,50 @@
+import turtle
+#make a ring by doing a smaller circle then bigger and then fill bigger
+#ring
+sam = turtle.Turtle()
+sam.begin_fill()
+sam.color("blue")
+sam.circle(100)
+sam.end_fill()
+sam.left(90)
+sam.penup()
+sam.forward(75)
+sam.left(90)
+sam.forward(50)
+sam.right(90)
+sam.forward(25)
+sam.pendown()
+sam.color("white")
+sam.begin_fill()
+sam.circle(-50)
+sam.end_fill()
+
+#semicircle
+bob = turtle.Turtle()
+bob.penup()
+bob.goto(150,150)
+bob.pendown()
+bob.pensize(3)
+bob.color("black")
+
+bob.begin_fill()
+bob.circle(50,180)
+bob.end_fill()
+
+#PIC
+joe = turtle.Turtle()
+joe.penup()
+joe.goto(-150,150)
+joe.pendown()
+joe.color("green")
+joe.begin_fill()
+joe.circle(100)
+joe.end_fill()
+joe.left(90)
+joe.color("white")
+joe.begin_fill()
+for i in range(4):
+    joe.forward(100)
+    joe.left(90)
+joe.end_fill()
+input()

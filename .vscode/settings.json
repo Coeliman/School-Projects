@@ -1,0 +1,8 @@
+{
+    "python.testing.pytestArgs": [
+        "personal"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "C_Cpp.errorSquiggles": "Disabled"
+}
